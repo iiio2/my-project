@@ -10,13 +10,13 @@ const Pagination = () => {
   if (totalPages === 1) return null;
 
   const pages = [];
-  if (selectUsers === 3) {
+  if (Number(selectUsers) === 3) {
     for (let i = 1; i < totalPages + 1; i++) {
       pages.push(i);
     }
   }
 
-  if (selectUsers === 5) {
+  if (Number(selectUsers) === 5) {
     for (let i = 1; i < totalPages + 1; i++) {
       pages.push(i);
     }
